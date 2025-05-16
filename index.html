@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/vue.global.js"></script>
+    <title>Conan Movie Website</title>
+  </head>
+
+  <body>
+    <header class="sticky-top">
+      <div class="container-fluid">
+        <div class="d-flex justify-content-between align-items-center py-2">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <img src="./assets/icon.png" class="nav-toggle-icon" />
+          </button>
+          <div class="d-none d-lg-flex align-items-center">
+            <nav>
+              <ul class="d-flex gap-4 mb-0 list-unstyled">
+                <li><a href="#carousel" class="header-link">Home</a></li>
+                <li><a href="#story" class="header-link">Story</a></li>
+                <li>
+                  <a href="#characters" class="header-link">Characters</a>
+                </li>
+                <li><a href="#movies" class="header-link">Movies</a></li>
+                <li><a href="#directors" class="header-link">Directors</a></li>
+                <li><a href="#merchList" class="header-link">MerchList</a></li>
+                <li><a href="#registration" class="header-link">Register</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse bg-light" id="navbarNav">
+        <ul class="navbar-nav d-lg-none">
+          <li class="nav-item"><a href="#carousel">Home</a></li>
+          <li class="nav-item"><a href="#story">Story</a></li>
+          <li class="nav-item"><a href="#characters">Characters</a></li>
+          <li class="nav-item"><a href="#movies">Movies</a></li>
+          <li class="nav-item"><a href="#directors">Directors</a></li>
+          <li class="nav-item"><a href="#merchList">MerchList</a></li>
+          <li class="nav-item"><a href="#registration">Register</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="carousel" class="w-100 position-relative">
+      <div id="conanCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="assets/Slides/s1.png"
+              class="d-block w-100 carousel-img"
+            />
+            <div class="carousel-caption-right">
+              <h2 class="fw-bold">Haibara's Resolve</h2>
+              <p>
+                With a calm and determined look, Haibara Ai holds Conan's
+                glasses by a tranquil lake, ready to face the mysteries ahead
+                with courage and intelligence.
+              </p>
+              <a href="#movies" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/Slides/s2.png"
+              class="d-block w-100 carousel-img"
+            />
+            <div class="carousel-caption-right">
+              <h2 class="fw-bold">Conan's Determination</h2>
+              <p>
+                With unwavering resolve, Conan points his tranquilizer gun,
+                ready to face any danger. The intense gaze under the orange
+                light highlights the tension of the moment.
+              </p>
+              <a href="#movies" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/Slides/s3.jpg"
+              class="d-block w-100 carousel-img"
+            />
+            <div class="carousel-caption-right">
+              <h2 class="fw-bold">Memories under the Cherry Blossom Tree</h2>
+              <p>
+              Under the cherry blossom tree, pink petals fall like rain. 
+              Xiao Heye stood under the shade of a tree, focused on patting 
+              the ball.
+              </p>
+              <a href="#movies" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/Slides/s4.png"
+              class="d-block w-100 carousel-img"
+            />
+            <div class="carousel-caption-right">
+              <h2 class="fw-bold">London Crisis</h2>
+              <p>
+                Shinichi Kudo and Ran Mouri find themselves in danger in front
+                of Big Ben in London. The tense atmosphere under the sunset
+                foreshadows an intense mystery and adventure about to unfold.
+              </p>
+              <a href="#movies" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="assets/Slides/s5.png"
+              class="d-block w-100 carousel-img"
+            />
+            <div class="carousel-caption-right">
+              <h2 class="fw-bold">The Mysterious Kaito Kid</h2>
+              <p>
+                The legendary phantom thief Kaito Kid makes a dazzling
+                appearance, his confident smile and signature gesture shining
+                under the spotlight. A new heist is about to begin!
+              </p>
+              <a href="#movies" class="btn btn-primary mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev custom-carousel-control"
+          type="button"
+          data-bs-target="#conanCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button
+          class="carousel-control-next custom-carousel-control"
+          type="button"
+          data-bs-target="#conanCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <section id="story" class="conan-story-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">The Story Behind Conan Edogawa</h2>
+        <div class="story-container">
+          <div class="story-grid">
+            <div class="story-images">
+              <div class="image-grid">
+                <img
+                  src="assets/Article/1.jpg"
+                  alt="Conan Edogawa"
+                  class="story-image"
+                />
+                <img
+                  src="assets/Article/2.jpg"
+                  alt="Shinichi Kudo"
+                  class="story-image"
+                />
+                <img
+                  src="assets/Article/3.jpg"
+                  alt="Conan Detective"
+                  class="story-image"
+                />
+                <img
+                  src="assets/Article/4.jpg"
+                  alt="Conan and Friends"
+                  class="story-image"
+                />
+              </div>
+            </div>
+            <article class="story-content">
+              <div class="story-section">
+                <h3>From Shinichi Kudo to Conan Edogawa</h3>
+                <p>
+                  Conan Edogawa, originally known as Shinichi Kudo, was a
+                  brilliant high school detective who was transformed into a
+                  child after being poisoned by members of the Black
+                  Organization. To protect his identity and continue solving
+                  cases, he adopted the alias Conan Edogawa, combining the names
+                  of two famous mystery writers: Arthur Conan Doyle and Edogawa
+                  Rampo.
+                </p>
+              </div>
+              <div class="story-section">
+                <h3>The Black Organization</h3>
+                <p>
+                  The Black Organization is a mysterious criminal syndicate
+                  involved in various illegal activities. Their main objective
+                  is developing a powerful drug called APTX 4869, which
+                  unexpectedly caused Shinichi's transformation.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main id="characters" class="characters-section py-5">
+      <h2 class="text-center mb-5">Main Characters</h2>
+      <div class="container character-grid">
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Ai01.jpg" alt="Ai Haibara" />
+              <h3>Ai Haibara</h3>
+            </div>
+            <div class="card-back">
+              <h3>Ai Haibara</h3>
+              <p>
+                A former member of the Black Organization who was also
+                transformed into a child. She's a brilliant scientist and
+                Conan's ally, providing crucial support in investigations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Connan01.jpg" alt="Conan Edogawa" />
+              <h3>Conan Edogawa</h3>
+            </div>
+            <div class="card-back">
+              <h3>Conan Edogawa</h3>
+              <p>
+                The main protagonist, a brilliant high school detective who was
+                transformed into a child. Despite his small size, he solves
+                complex cases with his sharp mind and deductive skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Mori2.jpg" alt="Ran Mouri" />
+              <h3>Ran Mouri</h3>
+            </div>
+            <div class="card-back">
+              <h3>Ran Mouri</h3>
+              <p>
+                Conan's childhood friend and love interest. A skilled martial
+                artist with a kind heart, she often helps Conan in his
+                investigations while unaware of his true identity.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Mori1.jpg" alt="Kogoro Mouri" />
+              <h3>Kogoro Mouri</h3>
+            </div>
+            <div class="card-back">
+              <h3>Kogoro Mouri</h3>
+              <p>
+                A private detective and Ran's father. Known as the "Sleeping
+                Detective," he often solves cases with Conan's help, though he's
+                unaware of Conan's true identity.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Heiji.jpg" alt="Heiji Hattori" />
+              <h3>Heiji Hattori</h3>
+            </div>
+            <div class="card-back">
+              <h3>Heiji Hattori</h3>
+              <p>
+                A high school detective from Osaka and Conan's
+                rival-turned-friend. He's one of the few people who knows
+                Conan's true identity and often helps in solving cases.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Kid.jpg" alt="Kaito Kid" />
+              <h3>Kaito Kid</h3>
+            </div>
+            <div class="card-back">
+              <h3>Kaito Kid</h3>
+              <p>
+                A mysterious phantom thief known for his spectacular heists and
+                magic tricks. Despite being a thief, he often helps Conan in
+                dangerous situations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Sonoko.png" alt="Sonoko Suzuki" />
+              <h3>Sonoko Suzuki</h3>
+            </div>
+            <div class="card-back">
+              <h3>Sonoko Suzuki</h3>
+              <p>
+                Ran's best friend and a wealthy heiress. She is known for her
+                bold personality and often gets involved in Conan's adventures.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="character-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="assets/Characters/Heiri(1).png" alt="Dr. Hari" />
+              <h3>Dr. Hari</h3>
+            </div>
+            <div class="card-back">
+              <h3>Dr. Hari</h3>
+              <p>
+                A brilliant scientist and a friend of the Mouri family. He often
+                provides technical support and gadgets to Conan for his
+                investigations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="movies" class="movie-section py-5">
+      <div>
+        <h2 class="text-center mb-4">Movies</h2>
+        <div class="search-container mb-4">
+          <input
+            type="text"
+            id="movieSearch"
+            class="form-control"
+            placeholder="Search for Movie Name, Release date or protagonist..."
+          />
+        </div>
+        <div class="container movie-container">
+          <div class="movie-list" id="movieList">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="directors" class="directors-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Directors</h2>
+        <div class="accordion" id="directorsAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#director1"
+              >
+                Kenji Kodama
+              </button>
+            </h2>
+            <div
+              id="director1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#directorsAccordion"
+            >
+              <div class="accordion-body">
+                <div class="director-content">
+                  <img
+                    src="assets/Director/d1.png"
+                    alt="Kenji Kodama"
+                    class="director-image"
+                  />
+                  <div class="director-info">
+                    <h3>Kenji Kodama</h3>
+                    <p>
+                      Known for directing several Detective Conan movies
+                      including "The Time Bombed Skyscraper" and "The Fourteenth
+                      Target". His work has been praised for its dynamic action
+                      sequences and emotional storytelling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#director2"
+              >
+                Yasuichiro Yamamoto
+              </button>
+            </h2>
+            <div
+              id="director2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#directorsAccordion"
+            >
+              <div class="accordion-body">
+                <div class="director-content">
+                  <img
+                    src="assets/Director/d2.png"
+                    alt="Yasuichiro Yamamoto"
+                    class="director-image"
+                  />
+                  <div class="director-info">
+                    <h3>Yasuichiro Yamamoto</h3>
+                    <p>
+                      Directed "The Last Wizard of the Century" and "Captured in
+                      Her Eyes". His films are known for their intricate
+                      mysteries and character development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#director3"
+              >
+                Masato Sato
+              </button>
+            </h2>
+            <div
+              id="director3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#directorsAccordion"
+            >
+              <div class="accordion-body">
+                <div class="director-content">
+                  <img
+                    src="assets/Director/d3.png"
+                    alt="Masato Sato"
+                    class="director-image"
+                  />
+                  <div class="director-info">
+                    <h3>Masato Sato</h3>
+                    <p>
+                      Directed "Countdown to Heaven" and "The Phantom of Baker
+                      Street". His work is characterized by its suspenseful
+                      atmosphere and innovative storytelling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#director4"
+              >
+                Nana Harada
+              </button>
+            </h2>
+            <div
+              id="director4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#directorsAccordion"
+            >
+              <div class="accordion-body">
+                <div class="director-content">
+                  <img
+                    src="assets/Director/d4.png"
+                    alt="Nana Harada"
+                    class="director-image"
+                  />
+                  <div class="director-info">
+                    <h3>Nana Harada</h3>
+                    <p>
+                      Directed "Crossroad in the Ancient Capital" and "Strategy
+                      Above the Depths". Her films are known for their beautiful
+                      visuals and emotional depth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#director5"
+              >
+                Susumu Mitsunaka
+              </button>
+            </h2>
+            <div
+              id="director5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#directorsAccordion"
+            >
+              <div class="accordion-body">
+                <div class="director-content">
+                  <img
+                    src="assets/Director/d5.png"
+                    alt="Susumu Mitsunaka"
+                    class="director-image"
+                  />
+                  <div class="director-info">
+                    <h3>Susumu Mitsunaka</h3>
+                    <p>
+                      Directed "The Private Eyes' Requiem" and "Jolly Roger in
+                      the Deep Azure". His work is praised for its action-packed
+                      sequences and engaging plotlines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#director6"
+              >
+                Kobun Shizuno
+              </button>
+            </h2>
+            <div
+              id="director6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#directorsAccordion"
+            >
+              <div class="accordion-body">
+                <div class="director-content">
+                  <img
+                    src="assets/Director/d6.png"
+                    alt="Kobun Shizuno"
+                    class="director-image"
+                  />
+                  <div class="director-info">
+                    <h3>Kobun Shizuno</h3>
+                    <p>
+                      Directed "The Raven Chaser" and "The Lost Ship in the
+                      Sky". His films are known for their thrilling action
+                      scenes and complex mysteries.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="character-select-section py-5">
+      <div id="app">
+        <h2 class="text-center mb-4">
+          Do you want to know if you are like that person in Detective Conan?(up
+          to 3 items)
+        </h2>
+        <div class="text-center mb-4">
+          <button
+            class="btn btn-primary"
+            v-show="!showTraits"
+            @click="showTraits = !showTraits"
+          >
+            {{ showTraits ? 'Confirm' : 'Confirm' }}
+          </button>
+        </div>
+        <div class="container character-select-container" v-show="showTraits">
+          <div class="trait-grid">
+            <div
+              v-for="(trait, index) in traits"
+              :key="index"
+              class="trait-item"
+              :class="{ 'selected': selectedTraits.includes(index) }"
+              @click="toggleTrait(index)"
+            >
+              <div class="trait-name">{{ trait.name }}</div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4" v-if="selectedTraits.length > 0">
+            <button class="btn btn-primary btn-lg" @click="generatePriority">
+              Confirm
+            </button>
+          </div>
+
+          <div v-if="showResult" class="result-container mt-4">
+            <h3 class="text-center mb-3">Your Best Match Character:</h3>
+            <div class="result-item">
+              <img
+                :src="matchedCharacter.image"
+                :alt="matchedCharacter.name"
+                class="result-image"
+              />
+              <div class="result-info">
+                <span class="result-name">{{ matchedCharacter.name }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="view active" id="merchList">
+      <h1 class="text-center mb-5 merch-title">Our Merchandise</h1>
+      <div class="container mb-4">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <input
+              type="search"
+              class="form-control merch-search"
+              id="merchSearch"
+              placeholder="Search merchandise..."
+              aria-label="Search merchandise"
+              onchange="setupMerchSearch()"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="container merch-container"
+        style="height: 500px; overflow: auto"
+      >
+        <div class="merch-grid merch-list" id="merchGrid"></div>
+      </div>
+    </div>
+
+    <div class="view cart-view" id="cartView">
+      <div class="cart-container">
+        <h1>Your Cart</h1>
+        <div class="cart-items" id="cartItems">
+        </div>
+        <div class="total">
+          Total: <span class="amount" id="cartTotal">$0.00</span>
+        </div>
+        <div class="actions">
+          <button class="back" id="backToList">Back to List</button>
+          <button class="checkout" id="proceedToCheckout">
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="view checkout-form" id="checkoutForm">
+      <h1>Checkout</h1>
+      <form id="checkoutFormElement">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required />
+          <div class="error-message" id="nameError">Please enter your name</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+          <div class="error-message" id="emailError">
+            Please enter a valid email
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="address">Shipping Address</label>
+          <input type="text" id="address" required />
+          <div class="error-message" id="addressError">
+            Please enter your address
+          </div>
+        </div>
+
+        <div class="payment-method">
+          <h3>Payment Method</h3>
+          <div class="payment-options">
+            <label>
+              <input type="radio" name="payment" value="credit" checked />
+              Credit Card
+            </label>
+            <label>
+              <input type="radio" name="payment" value="paypal" /> PayPal
+            </label>
+          </div>
+
+          <div class="card-details active" id="cardDetails">
+            <div class="form-group">
+              <label for="cardNumber">Card Number</label>
+              <input
+                type="text"
+                id="cardNumber"
+                placeholder="1234 5678 9012 3456"
+              />
+              <div class="error-message" id="cardError">
+                Please enter a valid card number
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" placeholder="123" />
+              <div class="error-message" id="cvvError">
+                Please enter a valid CVV
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="back" id="backToCart">
+            Back to Cart
+          </button>
+          <button type="submit" class="submit" id="submitOrder">
+            Submit Order
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="view confirmation" id="confirmation">
+      <div class="icon">✓</div>
+      <h2>Order Confirmed!</h2>
+      <p>
+        Thank you for your purchase. Your order has been placed successfully.
+      </p>
+
+      <div class="order-summary">
+        <h3>Order Summary</h3>
+        <div id="orderItems">
+        </div>
+        <div class="total">
+          Total: <span class="amount" id="orderTotal">$0.00</span>
+        </div>
+      </div>
+
+      <button id="backToStore">Back to Store</button>
+    </div>
+
+    <div class="cart-button" id="cartButton" style="display: none">
+      <span>🛒</span>
+      <div class="badge" id="cartBadge">0</div>
+    </div>
+
+    <section id="registration" class="registration-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 merch-title" style="color: white;">Registration Form</h2>
+        <form id="registrationForm" novalidate autocomplete="off">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+            />
+            <div class="invalid-feedback" id="nameEmptyError">
+              Please enter your name.
+            </div>
+            <div class="invalid-feedback" id="nameInvalidError">
+              Only English letters and underscores are allowed
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label">Age:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="age"
+              name="age"
+              min="1"
+              max="120"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a valid age (1-120).
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="dob" class="form-label">Date of Birth:</label>
+            <input
+              type="date"
+              class="form-control"
+              id="dob"
+              name="dob"
+              required
+            />
+            <div class="invalid-feedback">
+              Please select your date of birth.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="male"
+                  value="male"
+                  required
+                />
+                <label class="form-check-label" for="male">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gender"
+                  id="female"
+                  value="female"
+                  required
+                />
+                <label class="form-check-label" for="female">Female</label>
+              </div>
+            </div>
+            <div
+              class="invalid-feedback"
+              id="genderError"
+              style="display: none"
+            >
+              Please select your gender.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="comments" class="form-label"
+              >Additional Comments:</label
+            >
+            <textarea
+              class="form-control"
+              id="comments"
+              name="comments"
+              rows="3"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              Please provide additional comments.
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
+            <p class="mb-0">
+              © 2024 Conan Movie Website<br />
+              All rights reserved
+            </p>
+            <p class="mb-0">
+              This website is a fan-made project and is not officially
+              affiliated with the creators or rights holders of Detective Conan.
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-envelope me-2"></i> info@conanmovie.com</li>
+              <li><i class="fas fa-phone me-2"></i> +123 456 7890</li>
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i> 123 Anime Street,
+                Tokyo, Japan
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center text-md-end">
+            <h5>Quick Links</h5>
+            <ul class="footer-nav list-unstyled mb-0">
+              <li><a href="#carousel">Home</a></li>
+              <li><a href="#story">Story</a></li>
+              <li><a href="#characters">Characters</a></li>
+              <li><a href="#movies">Movies</a></li>
+              <li><a href="#directors">Directors</a></li>
+              <li><a href="#merchList">MerchList</a></li>
+              <li><a href="#registration">Register</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <h5>Follow Us</h5>
+            <a href="#" class="me-3"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#" class="me-3"><i class="fab fa-weibo fa-2x"></i></a>
+          </div>
+        </div>
+
+        <div class="row mt-4 pt-3 border-top">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              © 2024 Conan Movie Website. All rights reserved. Detective Conan
+              and all related characters are trademarks of Gosho Aoyama.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/index.js"></script>
+</html>
